@@ -9,8 +9,6 @@ Application météo Android avec prévisions en temps réel utilisant l'API Open
 - Météo actuelle avec température, conditions et icônes
 - Prévisions sur 5 jours
 - Géolocalisation automatique
-- Recherche manuelle par ville (optionnel)
-- Thème sombre/clair (optionnel)
 
 ## Technologies 🛠️
 
@@ -49,6 +47,11 @@ OPEN_WEATHER_API_KEY="votre_clé_api"
 3. Synchroniser le projet avec Gradle
 
 ## Améliorations prévues 🚀
+
+
+Recherche manuelle par ville (optionnel)
+
+Thème sombre/clair (optionnel)
 
 Notifications météo
 
