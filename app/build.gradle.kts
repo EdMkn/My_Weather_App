@@ -29,7 +29,7 @@ android {
         buildConfigField(
             "String",
             "OPEN_WEATHER_API_KEY",
-            "\"${secretsProperties.getProperty("OPEN_WEATHER_API_KEY")}\""
+            "\"${System.getenv("OPEN_WEATHER_API_KEY")}\""
         )
     }
 
