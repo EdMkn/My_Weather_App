@@ -26,6 +26,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         val weatherApiKey: String = System.getenv("OPEN_WEATHER_API_KEY") ?: "DUMMY_KEY"
+        println("Weather API key prefix: " + (weatherApiKey.take(5)))
         buildConfigField(
             "String",
             "OPEN_WEATHER_API_KEY",
