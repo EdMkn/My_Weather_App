@@ -2,7 +2,7 @@
 
 Application météo Android avec prévisions en temps réel utilisant l'API OpenWeatherMap
 
-![App Screenshot](/app/src/main/res/drawable/screenshot.png) *(Remplacez par votre propre capture d'écran)*
+![App Screenshot](/app/src/main/res/drawable/screenshot.png) 
 
 ## Fonctionnalités ✨
 
@@ -18,12 +18,12 @@ Application météo Android avec prévisions en temps réel utilisant l'API Open
 - **Architecture** - MVVM (Model-View-ViewModel)
 - **API** - OpenWeatherMap
 - **Bibliothèques** :
-    - Retrofit - Appels réseau
-    - Gson - Conversion JSON
-    - Coroutines - Gestion asynchrone
-    - View Binding - Liaison des vues
-    - Glide - Chargement des images
-    - Play Services Location - Géolocalisation
+  - Retrofit - Appels réseau
+  - Gson - Conversion JSON
+  - Coroutines - Gestion asynchrone
+  - View Binding - Liaison des vues
+  - Glide - Chargement des images
+  - Play Services Location - Géolocalisation
 
 ## Prérequis 📋
 
@@ -34,6 +34,7 @@ Application météo Android avec prévisions en temps réel utilisant l'API Open
 ## Installation 🔧
 
 1. Cloner le dépôt :
+
 ```bash
 git clone https://github.com/votre-utilisateur/my-weather-app.git
 ```
@@ -44,9 +45,11 @@ git clone https://github.com/votre-utilisateur/my-weather-app.git
 // Dans secrets.properties
 OPEN_WEATHER_API_KEY="votre_clé_api"
 ```
+
 3. Synchroniser le projet avec Gradle
 
 ## Améliorations prévues 🚀
+
 Notifications météo
 
 Widget Android
