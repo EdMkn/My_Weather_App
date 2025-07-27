@@ -2,9 +2,23 @@ name: Android CI
 
 on:
   push:
-    branches: [ master ]  # Déclencheur : à chaque push sur "main"
+    branches: [ master ]  # Déclencheur : à chaque push sur "master"
+    paths:
+      - 'app/src/main/java/**'       # Fichiers Kotlin/Java
+      - 'app/src/main/res/**'    
+      - 'app/src/main/assets/**'     # Fichiers assets
+      - 'app/src/test/**'           # Tests unitaires
+      - 'gradle.properties'         # Config globale    # Ressources (XML, drawables)
+      - 'app/build.gradle.kts'       # Config Gradle
+      - 'app/src/main/AndroidManifest.xml'
+
   pull_request:
     branches: [ master ]
+    paths:
+      - 'app/src/**' 
+      - 'gradle.properties'         # Config globale    # Ressources (XML, drawables)
+      - 'app/build.gradle.kts'       # Config Gradle
+      - 'app/src/main/AndroidManifest.xml'
 
 jobs:
   build:
