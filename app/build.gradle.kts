@@ -7,11 +7,11 @@ plugins {
 }
 
 // Load secrets
-val secretsProperties = file("../secrets.properties").let {
+/* val secretsProperties = file("../secrets.properties").let {
     Properties().apply {  // ← Now resolves correctly
         if (it.exists()) load(it.reader())
     }
-}
+} */
 
 android {
     namespace = "com.myprojects.my_weather_app"
@@ -25,11 +25,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
+        val weatherApiKey: String = System.getenv("OPEN_WEATHER_API_KEY") ?: "DUMMY_KEY"
         buildConfigField(
             "String",
             "OPEN_WEATHER_API_KEY",
-            "\"${System.getenv("OPEN_WEATHER_API_KEY")}\""
+             "\"$weatherApiKey\""
         )
     }
 
