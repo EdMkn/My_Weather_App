@@ -26,10 +26,11 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         val weatherApiKey: String = System.getenv("OPEN_WEATHER_API_KEY") ?: "DUMMY_KEY"
+        val escapedApiKey = "\"" + weatherApiKey.replace("\"", "\\\"") + "\""
         buildConfigField(
             "String",
             "OPEN_WEATHER_API_KEY",
-             "\"$weatherApiKey\""
+             "\"$escapedApiKey\""
         )
     }
 
