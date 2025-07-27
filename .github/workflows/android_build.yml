@@ -11,6 +11,7 @@ on:
       - 'gradle.properties'         # Config globale    # Ressources (XML, drawables)
       - 'app/build.gradle.kts'       # Config Gradle
       - 'app/src/main/AndroidManifest.xml'
+      - '.github/workflows/**'
 
   pull_request:
     branches: [ master ]
@@ -19,6 +20,7 @@ on:
       - 'gradle.properties'         # Config globale    # Ressources (XML, drawables)
       - 'app/build.gradle.kts'       # Config Gradle
       - 'app/src/main/AndroidManifest.xml'
+      - '.github/workflows/**'
 
 jobs:
   build:
