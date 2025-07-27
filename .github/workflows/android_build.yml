@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ main ]  # Déclencheur : à chaque push sur "main"
+    branches: [ master ]  # Déclencheur : à chaque push sur "main"
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
