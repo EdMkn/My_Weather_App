@@ -92,3 +92,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
+
+tasks.register("printApiKey") {
+    doLast {
+        println("BuildConfig.WEATHER_API_KEY is set during build.")
+    }
+}
