@@ -30,7 +30,7 @@ android {
         buildConfigField(
             "String",
             "OPEN_WEATHER_API_KEY",
-             "\"$escapedApiKey\""
+            escapedApiKey
         )
     }
 
